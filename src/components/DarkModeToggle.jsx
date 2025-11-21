@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { TbMoon, TbMoonFilled } from 'react-icons/tb'
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({ size }) => {
     const [darkMode, setDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
     const toggleTheme = () => setDarkMode(!darkMode);
 
@@ -11,7 +11,7 @@ const DarkModeToggle = () => {
 
     return (
         <button className='p-2.5 rounded-md bg-gray-300 dark:bg-gray-700' onClick={toggleTheme}>
-            {darkMode ? <TbMoon size={16}/> : <TbMoonFilled size={16}/>}
+            {darkMode ? <TbMoon size={size}/> : <TbMoonFilled size={size}/>}
         </button>
     )
 }

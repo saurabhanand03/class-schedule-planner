@@ -7,7 +7,7 @@ const Header = () => {
             <div className='flex-1'></div>
             <h1 className='text-2xl font-bold tracking-tight md:text-3xl lg:text-3xl text-center'>Class Schedule Planner</h1>
             <div className='flex-1 text-right'>
-                <DarkModeToggle size={10}/>
+                <DarkModeToggle size={16}/>
             </div>
         </header>
     )
