@@ -1,11 +1,9 @@
 import { DragDropContext } from 'react-beautiful-dnd';
 import { useState } from 'react';
-import { classList } from '../data/classes';
+import classes from '../data/classes.json';
 import Semester from "./Semester";
 
 const SemesterList = () => {
-    const [classes, updateClasses] = useState(classList);
-
     const [semesters, setSemesters] = useState({
         semester1: [],
         semester2: [],
@@ -21,8 +19,6 @@ const SemesterList = () => {
         semester12: [],
         unassigned: classes,
     });
-
-    // const [semesters, setSemesters] = useState([new Array(9).fill([]).concat(classes)]);
 
     const [calendarMode, setCalendarMode] = useState(false);
     const toggleCalendarMode = () => setCalendarMode(!calendarMode);
