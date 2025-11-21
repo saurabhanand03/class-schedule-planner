@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// import { FiMoon } from 'react-icons/fi'
 import { TbMoon, TbMoonFilled } from 'react-icons/tb'
 
 const DarkModeToggle = () => {
@@ -14,8 +13,8 @@ const DarkModeToggle = () => {
     }, [darkMode]);
 
     return (
-        <button className='p-3 rounded-md bg-gray-300 dark:bg-gray-700' onClick={toggleTheme}>
-            {darkMode ? <TbMoon size={20}/> : <TbMoonFilled size={20}/>}
+        <button className='p-2.5 rounded-md bg-gray-300 dark:bg-gray-700' onClick={toggleTheme}>
+            {darkMode ? <TbMoon size={16}/> : <TbMoonFilled size={16}/>}
         </button>
     )
 }
