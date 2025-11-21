@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { TbMoon, TbMoonFilled } from 'react-icons/tb'
 
 const DarkModeToggle = () => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [darkMode, toggleDarkMode] = useState(prefersDark);
-    const toggleTheme = () => {
-        toggleDarkMode((prevMode) => !prevMode);
-    }
+    const [darkMode, setDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const toggleTheme = () => setDarkMode(!darkMode);
 
     useEffect(() => {
         document.body.classList.toggle('dark', darkMode);
