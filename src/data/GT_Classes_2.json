@@ -1,0 +1,434 @@
+[
+    {
+        "code": "CS6035",
+        "name": "Introduction to Information Security",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6150",
+        "name": "Computing for Good",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6200",
+        "name": "Introduction to Operating Systems (formerly CS 8803 O02)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6210",
+        "name": "Advanced Operating Systems",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6211",
+        "name": "System Design for Cloud Computing (formerly CS 8803 O12)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6238",
+        "name": "Secure Computer Systems",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6250",
+        "name": "Computer Networks",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6260",
+        "name": "Applied Cryptography",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6261",
+        "name": "Security Incident Response (formerly CS 8803 O22)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6262",
+        "name": "Network Security",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6263",
+        "name": "Intro to Cyber Physical Systems Security (formerly CS 8803 O07)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6264",
+        "name": "Information Security Lab - System and Network Defenses (formerly CS 8803 O11)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6265",
+        "name": "Information Security Lab",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6290",
+        "name": "High Performance Computer Architecture",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6291",
+        "name": "Embedded Systems Optimization (formerly CS 8803 O04)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6300",
+        "name": "Software Development Process",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6310",
+        "name": "Software Architecture and Design",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6340",
+        "name": "Software Analysis",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6400",
+        "name": "Database Systems Concepts and Design",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6422",
+        "name": "Database System Implementation",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6435",
+        "name": "Digital Health Equity (formerly CS 8803 O16)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6440",
+        "name": "Intro to Health Informatics",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6457",
+        "name": "Video Game Design",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6460",
+        "name": "Educational Technology",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6475",
+        "name": "Computational Photography",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6476",
+        "name": "Computer Vision",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6491",
+        "name": "Foundations of Computer Graphics",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6515",
+        "name": "Intro to Graduate Algorithms (formerly CS 8803 GA)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6601",
+        "name": "Artificial Intelligence",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6603",
+        "name": "AI, Ethics, and Society (formerly CS 8803 O10)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6675",
+        "name": "Advanced Internet Systems and Applications",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6747",
+        "name": "Advanced Malware Analysis",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6750",
+        "name": "Human-Computer Interaction",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS6795",
+        "name": "Introduction to Cognitive Science",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7210",
+        "name": "Distributed Computing",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7280",
+        "name": "Network Science",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7295",
+        "name": "GPU Hardware and Software (formerly CS 8803 O21)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7400",
+        "name": "Quantum Computing (formerly CS 8803 O13)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7470",
+        "name": "Mobile & Ubiquitous Computing",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7496",
+        "name": "Computer Animation",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7632",
+        "name": "Game AI",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7637",
+        "name": "Knowledge-Based Artificial Intelligence - Cognitive Systems",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7638",
+        "name": "Robotics: AI Techniques (formerly CS 8803 O01)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7639",
+        "name": "Cyber-Physical Design and Analysis (formerly CS 8803 O09)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7641",
+        "name": "Machine Learning",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7642",
+        "name": "Reinforcement Learning (formerly CS 8803 O03)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7643",
+        "name": "Deep Learning",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7646",
+        "name": "Machine Learning for Trading",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS7650",
+        "name": "Natural Language Processing",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O08",
+        "name": "Compilers - Theory and Practice",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O15",
+        "name": "Introduction to Computer Law",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O17",
+        "name": "Global Entrepreneurship",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O20",
+        "name": "Quantum Hardware",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O23",
+        "name": "Modern Internet Research Methods",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O24",
+        "name": "Intro to Research",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CS8803O27",
+        "name": "Computer Graphics in the AI Era",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CSE6220",
+        "name": "Intro to High-Performance Computing",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CSE6242",
+        "name": "Data and Visual Analytics",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CSE6250",
+        "name": "Big Data for Health Informatics",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "CSE6742",
+        "name": "Modeling, Simulation, and Military Gaming",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ECE8843",
+        "name": "Side-Channels and Their Role in Cybersecurity",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "INTA6450",
+        "name": "Data Analytics & Security",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ISYE6402",
+        "name": "Time Series Analysis",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ISYE6420",
+        "name": "Bayesian Statistics",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ISYE6501",
+        "name": "Intro to Analytics Modeling",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ISYE6525",
+        "name": "Topics on High-Dimensional Data Analytics (formerly ISYE 8803)",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ISYE6644",
+        "name": "Simulation and Modeling for Engineering and Science",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "ISYE6669",
+        "name": "Deterministic Optimization",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "MGT6311",
+        "name": "Digital Marketing",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "MGT8813",
+        "name": "Financial Modeling",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "PUBP6725",
+        "name": "Information Security Policies",
+        "credits": 3,
+        "prereqs": []
+    },
+    {
+        "code": "PUBP8823",
+        "name": "Geopolitics of Cybersecurity",
+        "credits": 3,
+        "prereqs": []
+    }
+]

@@ -1,6 +1,6 @@
 import { DragDropContext } from 'react-beautiful-dnd';
 import { useState } from 'react';
-import classes from '../data/classes.json';
+import classes from '../data/GT_Classes_2.json';
 import Semester from "./Semester";
 
 const SemesterList = () => {
