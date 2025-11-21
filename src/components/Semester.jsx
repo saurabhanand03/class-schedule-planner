@@ -1,14 +1,23 @@
-import React, { useState } from 'react'
 import { Droppable } from 'react-beautiful-dnd';
 import Class from "../components/Class";
-// import { FiChevronLeft, FiChevronRight, FiCalendar } from 'react-icons/fi'
-import { Tb123, TbSortAscendingNumbers, TbCalendar, TbChevronLeft, TbChevronRight } from 'react-icons/tb'
+import { TbSortAscendingNumbers, TbCalendar, TbChevronLeft, TbChevronRight } from 'react-icons/tb'
 
-const Semester = ({ id, semesterClasses, semesterIndex, calendarMode, toggleCalendarMode, startingYear, increaseStartYear, decreaseStartYear }) => {
+const Semester = ({ 
+    id, 
+    semesterClasses, 
+    semesterIndex, 
+    calendarMode, 
+    toggleCalendarMode, 
+    startingSemester, 
+    increaseStartSemester, 
+    decreaseStartSemester 
+}) => {
 
     const semesterNames = ['Spring', 'Summer', 'Fall'];
 
-    const semesterName = calendarMode ? semesterNames[(semesterIndex+1) % 3] + ' ' + (startingYear + Math.floor((semesterIndex+1) / 3)) : 'Semester ' + parseInt(id.replace('semester', ''));
+    const semesterName = calendarMode ?
+        semesterNames[(semesterIndex + (startingSemester[0] % 3)) % 3] + ' ' + (startingSemester[1] + Math.floor((semesterIndex + (startingSemester[0] % 3)) / 3)) : 
+        'Semester ' + parseInt(id.replace('semester', ''));
 
     const totalSemesterCredits = semesterClasses.reduce((accumulator, currClass) => accumulator + currClass.credits, 0);
 
@@ -16,17 +25,17 @@ const Semester = ({ id, semesterClasses, semesterIndex, calendarMode, toggleCale
         <div>
             <div className='flex items-end mt-2 font-bold tracking-tight px-6'>
                 <div className='flex-1'>
-                    {semesterIndex == 0 ?
+                    {semesterIndex === 0 ?
                         <div onClick={toggleCalendarMode}>
                             {calendarMode ? <TbCalendar size={28} /> : <TbSortAscendingNumbers size={28} />}
-                        </div>
-                        : <></>
+                        </div> : 
+                        <></>
                     }
                 </div>
                 <h3 className='flex-2 text-lg text-center flex'>
-                    {calendarMode && semesterIndex == 0 ? <TbChevronLeft size={28} className='mx-4' onClick={decreaseStartYear}/> : <></>}
+                    {calendarMode && semesterIndex === 0 ? <TbChevronLeft size={28} className='mx-4' onClick={decreaseStartSemester}/> : <></>}
                     {semesterName}
-                    {calendarMode && semesterIndex == 0 ? <TbChevronRight size={28} className='mx-4' onClick={increaseStartYear}/> : <></>}
+                    {calendarMode && semesterIndex === 0 ? <TbChevronRight size={28} className='mx-4' onClick={increaseStartSemester}/> : <></>}
                 </h3>
                 <div className='flex-1'>
                     <h3 className='text-sm text-slate-600 dark:text-slate-400 text-right'>Total Credits: {totalSemesterCredits}</h3>
@@ -48,4 +57,4 @@ const Semester = ({ id, semesterClasses, semesterIndex, calendarMode, toggleCale
     )
 }
 
-export default Semester
+export default Semester;
