@@ -1,5 +1,6 @@
 import { Droppable } from 'react-beautiful-dnd';
 import Class from "../components/Class";
+import CompactClass from './CompactClass';
 import { TbSortAscendingNumbers, TbCalendar, TbChevronLeft, TbChevronRight } from 'react-icons/tb'
 
 const Semester = ({ 
@@ -10,7 +11,8 @@ const Semester = ({
     toggleCalendarMode, 
     startingSemester, 
     increaseStartSemester, 
-    decreaseStartSemester 
+    decreaseStartSemester,
+    compactView
 }) => {
 
     const semesterNames = ['Spring', 'Summer', 'Fall'];
@@ -43,9 +45,11 @@ const Semester = ({
             </div>
             <Droppable droppableId={id}>
                 {(provided) => (
-                    <div className="bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 min-h-[70px] rounded-md p-3 space-y-3" ref={provided.innerRef} {...provided.droppableProps}>
+                    <div className={`bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 min-h-[70px] rounded-md p-3 ${compactView ? "" : "space-y-3"}`} ref={provided.innerRef} {...provided.droppableProps}>
                         {semesterClasses.map((classItem, index) => {
                             return (
+                                compactView ?
+                                <CompactClass key={classItem.code} classItem={classItem} index={index} /> :
                                 <Class key={classItem.code} classItem={classItem} index={index} />
                             );
                         })}

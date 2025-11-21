@@ -4,7 +4,7 @@ import classes from '../data/GT_Classes_2.json';
 import Semester from "./Semester";
 import Cookies from 'js-cookie';
 
-const SemesterList = () => {
+const SemesterList = ({ compactView }) => {
     const [semesters, setSemesters] = useState({
         semester1: [],
         semester2: [],
@@ -131,23 +131,29 @@ const SemesterList = () => {
             <div className="flex-1 ml-6 mr-3">
                 {Object.keys(semesters).slice(0, -1).map((semesterId, index) => {
                 return (
-                    <Semester
-                    key={semesterId}
-                    id={semesterId}
-                    semesterClasses={semesters[semesterId]}
-                    semesterIndex={index}
-                    calendarMode={calendarMode}
-                    toggleCalendarMode={toggleCalendarMode}
-                    startingSemester={[startSemester, startYear]}
-                    increaseStartSemester={increaseStartSemester}
-                    decreaseStartSemester={decreaseStartSemester}
+                    <Semester 
+                        key={semesterId}
+                        id={semesterId}
+                        semesterClasses={semesters[semesterId]}
+                        semesterIndex={index}
+                        calendarMode={calendarMode}
+                        toggleCalendarMode={toggleCalendarMode}
+                        startingSemester={[startSemester, startYear]}
+                        increaseStartSemester={increaseStartSemester}
+                        decreaseStartSemester={decreaseStartSemester}
+                        compactView={compactView}
                     />
                 );
                 }
                 )}
             </div>
             <div className="flex-1 ml-3 mr-6">
-                <Semester id="unassigned" heading="Unassigned Classes" semesterClasses={semesters.unassigned} />
+                <Semester 
+                    id="unassigned"
+                    heading="Unassigned Classes"
+                    semesterClasses={semesters.unassigned} 
+                    compactView={compactView}
+                />
             </div>
             </div>
         </DragDropContext>
