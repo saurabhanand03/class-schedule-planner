@@ -127,8 +127,8 @@ const SemesterList = ({ compactView }) => {
 
     return (
         <DragDropContext onDragEnd={handleOnDragEnd}>
-            <div className="flex">
-            <div className="flex-1 ml-6 mr-3">
+            <div className="flex gap-6 mx-6">
+            <div className="flex-1">
                 {Object.keys(semesters).slice(0, -1).map((semesterId, index) => {
                 return (
                     <Semester 
@@ -147,7 +147,7 @@ const SemesterList = ({ compactView }) => {
                 }
                 )}
             </div>
-            <div className="flex-1 ml-3 mr-6">
+            <div className="flex-1">
                 <Semester 
                     id="unassigned"
                     heading="Unassigned Classes"
